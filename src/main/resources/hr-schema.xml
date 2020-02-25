@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hr SYSTEM "hr.dtd">
+
 <!-- 人力资源管理系统 -->
-<hr>
+<hr xmlns="http://www.w3school.com.cn"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="hr.xsd">
+
     <employee no="302">
         <name>张三</name>
         <age>31</age>
