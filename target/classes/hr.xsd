@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.w3school.com.cn"
+           xmlns="http://www.w3school.com.cn"
+           elementFormDefault="qualified">
+    <xs:element name="hr">
+        <!--complexType含义：复杂节点，包含子节点时必须使用 -->
+        <xs:complexType>
+            <!--子节点必要按顺序进行书写 -->
+            <xs:sequence>
+                <xs:element name="employee" minOccurs="1" maxOccurs="100">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"></xs:element>
+                            <xs:element name="age"  type="xs:integer">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:minInclusive value="18"></xs:minInclusive>
+                                        <xs:maxInclusive value="60"></xs:maxInclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="salary" type="xs:integer"></xs:element>
+                            <xs:element name="deparment">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="dname" type="xs:string"></xs:element>
+                                        <xs:element name="address" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="no" type="xs:string" use="required"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

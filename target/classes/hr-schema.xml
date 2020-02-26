@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- <!DOCTYPE hr SYSTEM "D:\IDEA File\HTML\src\main\resources\hr.dtd"> -->
 <!-- 人力资源管理系统 -->
-<!--
-<hr xmlns="http://www.w3school.com.cn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="hr.xsd">
--->
-<hr>
+<hr xmlns="http://www.w3school.com.cn"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="hr.xsd">
+
     <employee no="302">
         <name>张三</name>
         <age>31</age>
@@ -23,16 +22,6 @@
         <deparment>
             <dname>工程部</dname>
             <address>大厦-B102</address>
-        </deparment>
-    </employee>
-
-    <employee no="305">
-        <name>苏苏</name>
-        <age>20</age>
-        <salary>4500</salary>
-        <deparment>
-            <dname>人事部</dname>
-            <address>大厦-B105</address>
         </deparment>
     </employee>
 
