@@ -10,7 +10,7 @@ import java.util.List;
 
 public class XPathPlan {
     public void XPaths(String s) throws DocumentException {
-        String file = "D:/IDEA File/HTML/src/main/resources/plan.xml";
+        String file = "E:/IDEA File/src/main/resources/plan.xml";
         SAXReader reader = new SAXReader();
         Document document = reader.read(file);
         List<Node> nodes = document.selectNodes(s);
@@ -30,7 +30,7 @@ public class XPathPlan {
         //xPathPlan.XPaths("//course[class-hour < 50]");
         //xPathPlan.XPaths("//course[course-name = '高等数学']");
         //xPathPlan.XPaths("//course[@id=3]");
-        xPathPlan.XPaths("//course[position() <= 2]");
-
+        //xPathPlan.XPaths("//course[position() <= 2]");
+        xPathPlan.XPaths("//course[position() >= 2 and position() <= 3]");
     }
 }

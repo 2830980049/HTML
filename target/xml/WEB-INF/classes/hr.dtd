@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT hr (employee+)>
+<!--空格不能少 -->
+<!ELEMENT employee (name,age,salary,deparment)>
+<!ATTLIST employee no CDATA "">
+<!ELEMENT  name (#PCDATA)>
+<!ELEMENT  age (#PCDATA)>
+<!ELEMENT  salary (#PCDATA)>
+<!ELEMENT  deparment (dname,address)>
+<!ELEMENT dname (#PCDATA)>
+<!ELEMENT address (#PCDATA)>

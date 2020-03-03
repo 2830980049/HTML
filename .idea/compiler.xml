@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="xml" />
         <module name="HTML" />
+        <module name="IDEA File" />
+        <module name="xml" />
       </profile>
     </annotationProcessing>
   </component>

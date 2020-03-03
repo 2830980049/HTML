@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 人力资源管理系统 -->
+<hr xmlns="http://www.w3school.com.cn"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="hr.xsd">
+
+    <employee no="302">
+        <name>张三</name>
+        <age>31</age>
+        <salary>4000</salary>
+        <deparment>
+            <dname>会计部</dname>
+            <address>大厦-B103</address>
+        </deparment>
+    </employee>
+
+    <employee no="303">
+        <name>德玛</name>
+        <age>30</age>
+        <salary>3000</salary>
+        <deparment>
+            <dname>工程部</dname>
+            <address>大厦-B102</address>
+        </deparment>
+    </employee>
+
+</hr>
