@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
+
     <h1>学员信息登记表</h1>
     <form action="http://localhost:8080/IDEA_File_war/FirstServlet/requestMethod">
         姓名：<input name="name">
