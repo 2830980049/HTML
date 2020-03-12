@@ -9,13 +9,37 @@
 
   <display-name>Archetype Created Web Application</display-name>
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-        <welcome-file>index.htm</welcome-file>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>student.html</welcome-file>
+        <welcome-file>student.htm</welcome-file>
+        <welcome-file>student.jsp</welcome-file>
         <welcome-file>default.html</welcome-file>
         <welcome-file>default.htm</welcome-file>
         <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
+
+    <context-param>
+        <param-name>copyright</param-name>
+        <param-value>@2020 WUQILI</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>title</param-name>
+        <param-value>吴启立的梦工厂</param-value>
+    </context-param>
+
+
+    <!--指定错误页面 -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error/404.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error/500.jsp</location>
+    </error-page>
+
+
 
     <!--声明Servlet -->
     <servlet>
