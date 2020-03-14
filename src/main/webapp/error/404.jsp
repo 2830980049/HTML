@@ -5,16 +5,12 @@
   Time: 16:00
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java"  isErrorPage="true" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java"  %>
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
     <h1>资源不存在</h1>
-    <%
-        String msg = exception.getMessage();
-        out.println("<br>" + exception.getClass().getSimpleName() + msg);
-    %>
 </body>
 </html>
